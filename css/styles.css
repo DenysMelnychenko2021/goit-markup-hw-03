@@ -6,27 +6,35 @@
   --secondary-color: #ffffff;
   --additional-color: #757575;
   --akcent-text-color: #2196f3;
+  --footer-bg-color: #2f303a;
 }
-.top-header {
-  background-color: aqua;
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.hero {
-  background-color: #2f303a;
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
-.advantages {
-  background-color: burlywood;
+img {
+  display: block;
 }
-.work {
-  background-color: cadetblue;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.team {
-  background-color: chartreuse;
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid tomato;
 }
-.bottom-footer {
-  background-color: #2f303a;
-}
-
-.menu-list .link.current {
+.link.current {
   color: var(--akcent-text-color);
 }
 .link {
@@ -35,23 +43,55 @@
 .list {
   list-style: none;
 }
+.hidden-title {
+  display: none;
+}
+.headlines {
+  font-size: 36px;
+  line-height: 1.18;
+  margin-bottom: 50px;
+}
 body {
   font-family: var(--main-font);
   color: var(--main-text-color);
   letter-spacing: 0.03em;
 }
-.headlines {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
+.top-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts-header {
+  display: flex;
+  align-items: center;
+}
+.contacts-header-item {
+  margin-left: 50px;
 }
 .logo-link {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.2;
   color: var(--akcent-text-color);
-  text-transform: capitalize;
+  background-color: #ffffff;
 }
 .part-logo-link {
   color: #000;
@@ -62,7 +102,7 @@ body {
 .menu-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
@@ -73,7 +113,7 @@ body {
 .contacts-header-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--additional-color);
 }
@@ -84,7 +124,7 @@ body {
 .contacts-footer {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.8;
   color: var(--secondary-color);
 }
 .contacts-footer:hover,
@@ -97,35 +137,40 @@ body {
 .address-font-style {
   font-style: normal;
 }
-.hidden-title {
-  visibility: hidden;
+.bottom-footer {
+  background-color: var(--footer-bg-color);
 }
 /*==================END COMPONENTS==================*/
 /*==================INDEX==================*/
+.hero {
+  height: 600px;
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  background-color: var(--footer-bg-color);
+}
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
+  line-height: 1.38;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-color);
 }
 .button-order {
-  font-family: var(--main-font);
+  padding: 10px 32px;
+  min-width: 200px;
+  border-radius: 4px;
+  border: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--secondary-color);
-  background: var(--akcent-text-color);
+  background-color: var(--akcent-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   cursor: pointer;
-  border: none;
 }
 .button-order:hover,
 .button-order:focus {
@@ -134,26 +179,36 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+.advantages {
+  padding-top: 47px;
+  padding-bottom: 47px;
+  outline: springgreen 1px solid;
+}
 .advantages-subtitle {
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.16;
   text-transform: uppercase;
 }
 .advantages-paragraph {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.8;
   color: var(--additional-color);
+}
+.work {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+.team {
+  background-color: #f5f4fa;
 }
 .team-name-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
+  line-height: 1.2;
 }
 .team-post-paragraph {
   font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
+  line-height: 1.2;
   color: var(--additional-color);
 }
 /*==================END INDEX==================*/
@@ -162,7 +217,7 @@ body {
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.8;
   text-align: center;
   color: var(--main-text-color);
   background: #f5f4fa;
