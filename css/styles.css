@@ -276,13 +276,10 @@ img {
 /*==================END INDEX==================*/
 
 /*==================PORTFOLIO==================*/
-.buttons-container {
+.buttons-filter-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 24px;
-}
-.buttons-filter-list {
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .buttons-filter-item:not(:last-child) {
   margin-right: 8px;
