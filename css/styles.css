@@ -319,7 +319,9 @@ img {
   flex-basis: calc((100% - 90px) / 3);
 }
 .filter-portfolio-title {
-  margin: 20px 24px 4px 24px;
+  margin-bottom: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -333,9 +335,12 @@ img {
   color: var(--additional-color);
 }
 .filter-portfolio-container-bg {
+  padding-top: 20px;
   padding-bottom: 20px;
   width: 370px;
   background: var(--secondary-color);
-  border: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 /*==================END PORTFOLIO==================*/
